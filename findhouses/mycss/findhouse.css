@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.findHouseSection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.findHouseContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.findHouseSection h1{
+    text-align: center;
+}
+
+.findHouseSection ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.findHouseSection ul a {
+    color: black;
+}
+
+.findHouseSection li {
+    padding: 7px 12px;
+}
+
+.findHouseContainer .findHouseInput {
+    border: 2px solid rgb(255, 34, 89);
+    height: 90px;
+    padding: 10px 50px; 
+    padding-top: 22px;
+    border-radius: 50px;
+    display: flex;
+}
+
+.location input {
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: solid 1px #e8e8e8;
+}
+
+.location input:focus {
+    outline: none;
+}
+
+.budget .nice-select, .propertyType .nice-select {
+    width: 150px !important;
+    margin-left: 20px;
+}
+
+.budget ul {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    height: 200px;
+    overflow-y: scroll !important;
+}
+
+.nice-select {
+    padding-top: 5px;
+}
+
+.propertyType ul {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    min-width: 150px;
+    /* overflow-y: scroll !important; */
+}
