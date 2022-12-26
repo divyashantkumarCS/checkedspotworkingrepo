@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="html 5 template">
     <meta name="author" content="">
-    <title>Contact Us</title>
+    <title>Error 404</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <!-- GOOGLE FONTS -->
@@ -16,17 +16,11 @@
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/fontawesome-5-all.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- LEAFLET MAP -->
-    <link rel="stylesheet" href="css/leaflet.css">
-    <link rel="stylesheet" href="css/leaflet-gesture-handling.min.css">
-    <link rel="stylesheet" href="css/leaflet.markercluster.css">
-    <link rel="stylesheet" href="css/leaflet.markercluster.default.css">
     <!-- ARCHIVES CSS -->
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/lightcase.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" id="color" href="css/default.css">
 </head>
@@ -39,185 +33,105 @@
         ================================================== -->
         <header id="header-container">
             <!-- Header -->
-            <div id="header">
-                <div class="container container-header">
-                    <!-- Left Side Content -->
-                    <div class="left-side" style="display: flex;">
-                        <!-- Logo -->
-                        <div style="width: 200px; height: 100px;">
-                            <a href="../index.html"><img src="./images/logocheckedspot.png" alt=""></a>
+            <header id="header-container" class="header head-tr">
+                <!-- Header -->
+                <div id="header" class="head-tr bottom">
+                    <div class="container container-header">
+                        <!-- Left Side Content -->
+                        <div class="left-side" style="display: flex;">
+                            <!-- Logo -->
+                            <div style="width: 200px; height: 100px;">
+                                <a href="#"><img src="./images/logocheckedspot.png" alt=""></a>
+                            </div>
+                            <!-- Mobile Navigation -->
+                            <div class="mmenu-trigger">
+                                <button class="hamburger hamburger--collapse" type="button">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                            <!-- Main Navigation -->
+                            <nav id="navigation" class="style-1">
+                                <ul id="responsive">
+                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="#">Buy</a>
+                                        <ul>
+                                            <li><a href="#">Property Type</a>
+                                                <ul>
+                                                    <li><a href="index.html">Flat in Bangalore</a></li>
+                                                    <li><a href="index.html">House for sale in Bangalore</a></li>
+                                                    <li><a href="index.html">Villa in Bangalore</a></li>
+                                                    <li><a href="index.html">Plot in Bangalore</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Rent</a>
+                                        <ul>
+                                            <li><a href="#">Popular Choices</a>
+                                                <ul>
+                                                    <li><a href="index.html">Owner Properties</a></li>
+                                                    <li><a href="index.html">Verified Properties</a></li>
+                                                    <li><a href="index.html">Furnished Homes</a></li>
+                                                    <li><a href="index.html">Bachelor Friendly Homes</a></li>
+                                                    <li><a href="index.html">Immediately Available</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Sell</a>
+                                        <ul>
+                                            <li><a href="#">For Owner</a>
+                                                <ul>
+                                                    <li><a href="index.html">Post PropertyFREE</a></li>
+                                                    <li><a href="index.html">My Dashboard</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./findhouses/contact-us.html">Contact</a></li>
+                                    <!-- <li class="d-none d-xl-none d-block d-lg-block"><a href="login.html">Login</a></li>
+                                    <li class="d-none d-xl-none d-block d-lg-block"><a href="register.html">Register</a></li>
+                                    <li class="d-none d-xl-none d-block d-lg-block mt-5 pb-4 ml-5 border-bottom-0"><a href="add-property.html" class="button border btn-lg btn-block text-center">Add Listing<i class="fas fa-laptop-house ml-2"></i></a></li> -->
+                                </ul>
+                            </nav>
+                            <!-- Main Navigation / End -->
                         </div>
-                        <!-- Mobile Navigation -->
-                        <div class="mmenu-trigger">
-                            <button class="hamburger hamburger--collapse" type="button">
-                                <span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-                                </span>
-                            </button>
+    
+    
+                        <div class="right-side d-none d-none d-lg-none d-xl-flex sign ml-0">
+                            <!-- Header Widget -->
+                            <!-- <div class="header-widget sign-in">
+                                <div class="show-reg-form modal-open"><a href="#">Sign In</a></div>
+                            </div> -->
+                            <!-- Header Widget / End -->
                         </div>
-                        <!-- Main Navigation -->
-                        <nav id="navigation" class="style-1">
-                            <ul id="responsive">
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="#">Buy</a>
-                                    <ul>
-                                        <li><a href="#">Property Type</a>
-                                            <ul>
-                                                <li><a href="../index.html">Flat in Bangalore</a></li>
-                                                <li><a href="../index.html">House for sale in Bangalore</a></li>
-                                                <li><a href="../index.html">Villa in Bangalore</a></li>
-                                                <li><a href="../index.html">Plot in Bangalore</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Rent</a>
-                                    <ul>
-                                        <li><a href="#">Popular Choices</a>
-                                            <ul>
-                                                <li><a href="../index.html">Owner Properties</a></li>
-                                                <li><a href="../index.html">Verified Properties</a></li>
-                                                <li><a href="../index.html">Furnished Homes</a></li>
-                                                <li><a href="../index.html">Bachelor Friendly Homes</a></li>
-                                                <li><a href="../index.html">Immediately Available</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Sell</a>
-                                    <ul>
-                                        <li><a href="#">For Owner</a>
-                                            <ul>
-                                                <li><a href="../index.html">Post PropertyFREE</a></li>
-                                                <li><a href="../index.html">My Dashboard</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="./findhouses/contact-us.html">Contact</a></li>
-                                <!-- <li class="d-none d-xl-none d-block d-lg-block"><a href="login.html">Login</a></li>
-                                <li class="d-none d-xl-none d-block d-lg-block"><a href="register.html">Register</a></li>
-                                <li class="d-none d-xl-none d-block d-lg-block mt-5 pb-4 ml-5 border-bottom-0"><a href="add-property.html" class="button border btn-lg btn-block text-center">Add Listing<i class="fas fa-laptop-house ml-2"></i></a></li> -->
-                            </ul>
-                        </nav>
-                        <!-- Main Navigation / End -->
                     </div>
-                    <!-- Left Side Content / End -->
-
-                    <!-- Right Side Content / End -->
-                    
-                    <!-- Right Side Content / End -->
-
-                    <div class="right-side d-none d-none d-lg-none d-xl-flex sign ml-0">
-                        <!-- Header Widget -->
-                        <!-- <div class="header-widget sign-in">
-                            <div class="show-reg-form modal-open"><a href="#">Sign In</a></div>
-                        </div> -->
-                        <!-- Header Widget / End -->
-                    </div>
-                    <!-- Right Side Content / End -->
-
-                    <!-- lang-wrap-->
-                    <!-- <div class="header-user-menu user-menu add d-none d-lg-none d-xl-flex">
-                        <div class="lang-wrap">
-                            <div class="show-lang"><span><i class="fas fa-globe-americas"></i><strong>ENG</strong></span><i class="fa fa-caret-down arrlan"></i></div>
-                            <ul class="lang-tooltip lang-action no-list-style">
-                                <li><a href="#" class="current-lan" data-lantext="En">English</a></li>
-                                <li><a href="#" data-lantext="Fr">Francais</a></li>
-                                <li><a href="#" data-lantext="Es">Espanol</a></li>
-                                <li><a href="#" data-lantext="De">Deutsch</a></li>
-                            </ul>
-                        </div>
-                    </div> -->
-                    <!-- lang-wrap end-->
-
                 </div>
-            </div>
+                <!-- Header / End -->
+            </header>
             <!-- Header / End -->
 
         </header>
         <div class="clearfix"></div>
         <!-- Header Container / End -->
-
-        <section class="headings">
-            <div class="text-heading text-center">
-                <div class="container">
-                    <h1>Contact Us</h1>
-                    <h2><a href="/">Home </a> &nbsp;/&nbsp; Contact Us</h2>
-                </div>
-            </div>
-        </section>
         <!-- END SECTION HEADINGS -->
 
-        <!-- START SECTION CONTACT US -->
-        <section class="contact-us">
-            <div class="container">
-                <div class="property-location mb-5">
-                    <h3>Our Location</h3>
-                    <div class="divider-fade"></div>
-                    <div id="map-contact" class="contact-map"></div>
+        <!-- START SECTION 404 -->
+        <section class="notfound pt-0">
+            <div class="container">               
+                <div class="top-headings text-center">
+                    <img src="images/bg/error-404.jpg" alt="Page 404">
+                    <h3 class="text-center">Page Not Found!</h3>
+                    <p class="text-center">Oops! Looks Like Something Going Rong We can’t seem to find the page you’re looking for make sure that you have typed the currect URL</p>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 col-md-12">
-                        <h3 class="mb-4">Contact Us</h3>
-                        <form id="contactform" class="contact-form" name="contactform" method="post" novalidate>
-                            <div id="success" class="successform">
-                                <p class="alert alert-success font-weight-bold" role="alert">Your message was sent successfully!</p>
-                            </div>
-                            <div id="error" class="errorform">
-                                <p>Something went wrong, try refreshing and submitting the form again.</p>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" required class="form-control input-custom input-full" name="name" placeholder="First Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" required class="form-control input-custom input-full" name="lastname" placeholder="Last Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control input-custom input-full" name="email" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control textarea-custom input-full" id="ccomment" name="message" required rows="8" placeholder="Message"></textarea>
-                            </div>
-                            <button type="submit" id="submit-contact" class="btn btn-primary btn-lg">Submit</button>
-                        </form>
-                    </div>
-                    <div class="col-lg-4 col-md-12 bgc">
-                        <div class="call-info">
-                            <h3>Contact Details</h3>
-                            <p class="mb-5">Please find below contact details and contact us today!</p>
-                            <ul>
-                                <li>
-                                    <div class="info">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <p class="in-p">#544,RK Hegde Nagar Main Road, First Floor,Before Fame Diognostic Bangalore</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="info">
-                                        <i class="fa fa-phone" aria-hidden="true"></i>
-                                        <p class="in-p">+91-9606937470, +91-9606937471</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="info">
-                                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                                        <p class="in-p ti">info@checkedspot.com</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="info cll">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <p class="in-p ti">10:00 a.m - 7:00 p.m</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="port-info">
+                    <a href="../index.html" class="btn btn-primary btn-lg">Go To Home</a>
                 </div>
             </div>
         </section>
-        <!-- END SECTION CONTACT US -->
+        <!-- END SECTION 404 -->
 
         <!-- START FOOTER -->
         <footer class="first-footer">
@@ -266,8 +180,9 @@
                                     <ul class="nav-right">
                                         <!-- <li><a href="agent-details.html">Agents Details</a></li>
                                         <li><a href="about.html">About Us</a></li>
-                                        <li><a href="blog.html">Blog Default</a></li>-->
-                                        <li><a href="../index.html">Home</a></li>
+                                        <li><a href="blog.html">Blog Default</a></li>
+                                        -->
+                                        <li><a href="../index.html">Home</a></li> 
                                         <li class="no-mgb"><a href="contact-us.html">Contact Us</a></li>
                                     </ul>
                                 </div>
@@ -411,17 +326,11 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/mmenu.min.js"></script>
         <script src="js/mmenu.js"></script>
-        <script src="js/jquery.form.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/slick3.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
-        <script src="js/forms.js"></script>
         <script src="js/ajaxchimp.min.js"></script>
         <script src="js/newsletter.js"></script>
-        <script src="js/leaflet.js"></script>
-        <script src="js/leaflet-gesture-handling.min.js"></script>
-        <script src="js/leaflet-providers.js"></script>
-        <script src="js/leaflet.markercluster.js"></script>
-        <script src="js/map-single.js"></script>
         <script src="js/color-switcher.js"></script>
         <script src="js/inner.js"></script>
 
