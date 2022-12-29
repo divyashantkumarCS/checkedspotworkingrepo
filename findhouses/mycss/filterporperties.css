@@ -14,9 +14,9 @@ p {
     height: auto;
     padding: 15px 20px;
     width: 100vw;
-    /* background-color: rgb(244, 74, 93);
-    border-bottom: solid 10px black; */
-    background-image: linear-gradient(rgb(244, 74, 93) 76%, Black);
+    background-color: rgb(244, 74, 93);
+    border-bottom: solid 10px black;
+    /* background-image: linear-gradient(rgb(244, 74, 93) 76%, Black); */
 }
 
 .filterContainer, .propertyType {
