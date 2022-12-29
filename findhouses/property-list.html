@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="html 5 template">
+    <title>Properties list</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i%7CMontserrat:600,800" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/fontawesome-5-all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- ARCHIVES CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./mycss/filterporperties.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Header Starts -->
+        <header id="header-filterOptions">
+            <!-- Header -->
+            <div id="header">
+                <div class="filterOptions filterOptions-header">
+                    <!-- Left Side Content -->
+                    <div class="left-side" style="display: flex;">
+                        <!-- Logo -->
+                        <div style="width: 200px; height: 100px;">
+                            <a href="../index.html"><img src="./images/logocheckedspot.png" alt=""></a>
+                        </div>
+                        <!-- Mobile Navigation -->
+                        <div class="mmenu-trigger">
+                            <button class="hamburger hamburger--collapse" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Main Navigation -->
+                        <nav id="navigation" class="style-1">
+                            <ul id="responsive">
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="#">Buy</a>
+                                    <ul>
+                                        <li><a href="#">Property Type</a>
+                                            <ul>
+                                                <li><a href="./property-list.html">Flat in Bangalore</a></li>
+                                                <li><a href="./property-list.html">House for sale in Bangalore</a></li>
+                                                <li><a href="./property-list.html">Villa in Bangalore</a></li>
+                                                <li><a href="./property-list.html">Plot in Bangalore</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Rent</a>
+                                    <ul>
+                                        <li><a href="#">Popular Choices</a>
+                                            <ul>
+                                                <li><a href="./property-list.html">Owner Properties</a></li>
+                                                <li><a href="./property-list.html">Verified Properties</a></li>
+                                                <li><a href="./property-list.html">Furnished Homes</a></li>
+                                                <li><a href="./property-list.html">Bachelor Friendly Homes</a></li>
+                                                <li><a href="../index.html">Immediately Available</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Sell</a>
+                                    <ul>
+                                        <li><a href="#">For Owner</a>
+                                            <ul>
+                                                <li><a href="../index.html">Post PropertyFREE</a></li>
+                                                <li><a href="../index.html">My Dashboard</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="./contact-us.html">Contact</a></li>
+                                <!-- <li class="d-none d-xl-none d-block d-lg-block"><a href="login.html">Login</a></li>
+                            <li class="d-none d-xl-none d-block d-lg-block"><a href="register.html">Register</a></li>
+                            <li class="d-none d-xl-none d-block d-lg-block mt-5 pb-4 ml-5 border-bottom-0"><a href="add-property.html" class="button border btn-lg btn-block text-center">Add Listing<i class="fas fa-laptop-house ml-2"></i></a></li> -->
+                            </ul>
+                        </nav>
+                        <!-- Main Navigation / End -->
+                    </div>
+                    <!-- Left Side Content / End -->
+
+                    <!-- Right Side Content / End -->
+
+                    <!-- Right Side Content / End -->
+
+                    <div class="right-side d-none d-none d-lg-none d-xl-flex sign ml-0">
+                        <!-- Header Widget -->
+                        <!-- <div class="header-widget sign-in">
+                        <div class="show-reg-form modal-open"><a href="#">Sign In</a></div>
+                    </div> -->
+                        <!-- Header Widget / End -->
+                    </div>
+                    <!-- Right Side Content / End -->
+
+                    <!-- lang-wrap-->
+                    <!-- <div class="header-user-menu user-menu add d-none d-lg-none d-xl-flex">
+                    <div class="lang-wrap">
+                        <div class="show-lang"><span><i class="fas fa-globe-americas"></i><strong>ENG</strong></span><i class="fa fa-caret-down arrlan"></i></div>
+                        <ul class="lang-tooltip lang-action no-list-style">
+                            <li><a href="#" class="current-lan" data-lantext="En">English</a></li>
+                            <li><a href="#" data-lantext="Fr">Francais</a></li>
+                            <li><a href="#" data-lantext="Es">Espanol</a></li>
+                            <li><a href="#" data-lantext="De">Deutsch</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                    <!-- lang-wrap end-->
+
+                </div>
+            </div>
+            <!-- Header / End -->
+
+        </header>
+        <!-- Header Ends -->
+
+        <!-- Filter Section Starts -->
+        <section class="filterSection">
+            <div class="filterContainer">
+                <div class="propertyType">
+                    <div>Buy</div>
+                    <div>Bangalore</div>
+                    <div><input type="text" placeholder="add more"></div>
+                </div>
+                <div class="filterOption">
+                    <div>Top Locality</div>
+                </div>
+                <div class="filterOption">
+                    <div>Budget</div>
+                </div>
+                <div class="filterOption">
+                    <div>Flat</div>
+                </div>
+                <div class="filterOption">
+                    <div>BHK</div>
+                </div>
+                <div class="filterOption">
+                    <div>Posted By</div>
+                </div>
+                <div class="filterOption">
+                    <div>More Filters</div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Filter Section Ends -->
+
+        <div class="porpListCont">
+            <!-- Tab Section Starts -->
+            <section class="tabSection">
+                <div class="tabContainer">
+                    <button>Properties</button>
+                    <button>New Projects</button>
+                    <button>Agents</button>
+                </div>
+            </section>
+            <!-- Tab Section Ends -->
+
+            <!-- Card Section Starts -->
+            <section  class="cardSection">
+                <div class="cardContainer">
+                    <div class="leftBlock">
+                        <div class="imageBlock">
+                            <p>Updated Today</p>
+                        </div>
+                        <p class="authority">Owner: Xyz</p>
+                    </div>
+                    <div class="detailsBlock">
+                        <p class="availability">ONLY ON CHECKED SPOT</p>
+                        <p>4 BHK Flat for Sale in Koramangala, Bangalore</p>
+                        <p>La Palazzo</p>
+                        <div class="flatDetail">
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="porpDescription">
+                            <p>Multistorey apartment is available for sale. It is a good location property. Please
+                                contact
+                                for more details.
+
+                                This exquisite 2 BHK Flat is offered for sale in Electronics City Phase 1, Electronic
+                                City,
+                                Bangalore. The property is ideally located in a strategic location in Gm Ambitious
+                                Enclave
+                                township. This apartment is a property of choice for resale. The under construction flat
+                                in
+                                Electronics City Phase 1, Electronic City is all ready for sale at a low-priced budget
+                                of
+                                INR 45 Lac. This flat is available for possession on Oct '23. The flat is sold in
+                                unfurnished condition. This may be an ideal option for your dream home from Flats for
+                                Sale
+                                in Bangalore</p><span></span>
+                        </div>
+                    </div>
+                    <div class="actionBlock">
+                        <p class="porpValue">&#8377;3.75 Cr</p>
+                        <p class="propArea">&#8377;4327 per sqft</p>
+                        <div>
+                            <button class="ownerDetail">Contact Owner</button>
+                            <button class="ownerPhone">Get Phone No.</button>
+                        </div>
+                        <p class="feedback">Share Feedback</p>
+                    </div>
+                </div>
+
+                <div class="cardContainer">
+                    <div class="leftBlock">
+                        <div class="imageBlock">
+                            <p>Updated Today</p>
+                        </div>
+                        <p class="authority">Owner: Xyz</p>
+                    </div>
+                    <div class="detailsBlock">
+                        <p class="availability">ONLY ON CHECKED SPOT</p>
+                        <p>4 BHK Flat for Sale in Koramangala, Bangalore</p>
+                        <p>La Palazzo</p>
+                        <div class="flatDetail">
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="porpDescription">
+                            <p>Multistorey apartment is available for sale. It is a good location property. Please
+                                contact
+                                for more details.
+
+                                This exquisite 2 BHK Flat is offered for sale in Electronics City Phase 1, Electronic
+                                City,
+                                Bangalore. The property is ideally located in a strategic location in Gm Ambitious
+                                Enclave
+                                township. This apartment is a property of choice for resale. The under construction flat
+                                in
+                                Electronics City Phase 1, Electronic City is all ready for sale at a low-priced budget
+                                of
+                                INR 45 Lac. This flat is available for possession on Oct '23. The flat is sold in
+                                unfurnished condition. This may be an ideal option for your dream home from Flats for
+                                Sale
+                                in Bangalore</p><span></span>
+                        </div>
+                    </div>
+                    <div class="actionBlock">
+                        <p class="porpValue">&#8377;3.75 Cr</p>
+                        <p class="propArea">&#8377;4327 per sqft</p>
+                        <div>
+                            <button class="ownerDetail">Contact Owner</button>
+                            <button class="ownerPhone">Get Phone No.</button>
+                        </div>
+                        <p class="feedback">Share Feedback</p>
+                    </div>
+                </div>
+
+                <div class="cardContainer">
+                    <div class="leftBlock">
+                        <div class="imageBlock">
+                            <p>Updated Today</p>
+                        </div>
+                        <p class="authority">Owner: Xyz</p>
+                    </div>
+                    <div class="detailsBlock">
+                        <p class="availability">ONLY ON CHECKED SPOT</p>
+                        <p>4 BHK Flat for Sale in Koramangala, Bangalore</p>
+                        <p>La Palazzo</p>
+                        <div class="flatDetail">
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="porpDescription">
+                            <p>Multistorey apartment is available for sale. It is a good location property. Please
+                                contact
+                                for more details.
+
+                                This exquisite 2 BHK Flat is offered for sale in Electronics City Phase 1, Electronic
+                                City,
+                                Bangalore. The property is ideally located in a strategic location in Gm Ambitious
+                                Enclave
+                                township. This apartment is a property of choice for resale. The under construction flat
+                                in
+                                Electronics City Phase 1, Electronic City is all ready for sale at a low-priced budget
+                                of
+                                INR 45 Lac. This flat is available for possession on Oct '23. The flat is sold in
+                                unfurnished condition. This may be an ideal option for your dream home from Flats for
+                                Sale
+                                in Bangalore</p><span></span>
+                        </div>
+                    </div>
+                    <div class="actionBlock">
+                        <p class="porpValue">&#8377;3.75 Cr</p>
+                        <p class="propArea">&#8377;4327 per sqft</p>
+                        <div>
+                            <button class="ownerDetail">Contact Owner</button>
+                            <button class="ownerPhone">Get Phone No.</button>
+                        </div>
+                        <p class="feedback">Share Feedback</p>
+                    </div>
+                </div>
+
+                <div class="cardContainer">
+                    <div class="leftBlock">
+                        <div class="imageBlock">
+                            <p>Updated Today</p>
+                        </div>
+                        <p class="authority">Owner: Xyz</p>
+                    </div>
+                    <div class="detailsBlock">
+                        <p class="availability">ONLY ON CHECKED SPOT</p>
+                        <p>4 BHK Flat for Sale in Koramangala, Bangalore</p>
+                        <p>La Palazzo</p>
+                        <div class="flatDetail">
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="porpDescription">
+                            <p>Multistorey apartment is available for sale. It is a good location property. Please
+                                contact
+                                for more details.
+
+                                This exquisite 2 BHK Flat is offered for sale in Electronics City Phase 1, Electronic
+                                City,
+                                Bangalore. The property is ideally located in a strategic location in Gm Ambitious
+                                Enclave
+                                township. This apartment is a property of choice for resale. The under construction flat
+                                in
+                                Electronics City Phase 1, Electronic City is all ready for sale at a low-priced budget
+                                of
+                                INR 45 Lac. This flat is available for possession on Oct '23. The flat is sold in
+                                unfurnished condition. This may be an ideal option for your dream home from Flats for
+                                Sale
+                                in Bangalore</p><span></span>
+                        </div>
+                    </div>
+                    <div class="actionBlock">
+                        <p class="porpValue">&#8377;3.75 Cr</p>
+                        <p class="propArea">&#8377;4327 per sqft</p>
+                        <div>
+                            <button class="ownerDetail">Contact Owner</button>
+                            <button class="ownerPhone">Get Phone No.</button>
+                        </div>
+                        <p class="feedback">Share Feedback</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Card Section Ends -->
+
+            <!-- Best Places in Banglore Section Starts-->
+            <section class="bestPlaceSection">
+                <h3>Best Places to Live in Bangalore</h3>
+                <div class="bestPlacesCont">
+                    <div class="nOPlaces">
+                        <p>
+                            The ever-expanding chic city of Bangalore offers residential flats in different ranges. You can
+                            find
+                            individual flats in Bangalore in a range of less than Rs 5,000 per sqft to those above Rs 7,500
+                            per
+                            sqft. You can find flats in posh localities and in more modest areas too.
+                        </p><br>
+                        <p>
+                            Bangalore has seen a huge expansion in the real estate market for flats in the last 2-3 decades.
+                            This trend had seen stagnation for the two-three years of the pandemic. But the market has
+                            picked up
+                            again and the growth trends visible in the previous decades are expected to continue in the
+                            future.
+                        </p><br>
+                        <p>
+                            If you are planning to buy a flat in Bangalore, here are some areas to choose from:
+                        </p>
+
+                        <h4>1 - Kanakapura Road Vakil Garden City</h4>
+
+                        <p>If you are looking for a flat in Bangalore that comes with the benefit of both a serene
+                            environment and proximity to IT hubs, then Kanakapura Road is the best. The area is home to a
+                            number of high-end residential projects equipped with all the modern amenities. This includes
+                            Godrej Eternity, Mantri Tranquil, Prestige Falcon City, and Brigade Meadows, to name a few.
+                            Excellent metro connectivity and availability of Cauvery water further make this locality more
+                            favorable. Kanakapura Road is also well-connected to Banashankari, Outer Ring Road, Bannerghatta
+                            Road, Electronic City, and Jayanagar. The demand for flats in Bangalore on Kanakapura Road has
+                            been fueled by the presence of numerous well-established schools, top hospitals, and well-known
+                            shopping malls nearby.
+                        </p>
+
+                        <h4>Flats for Sale in Kanakapura Road, Bangalore</h4>
+
+                        <div class="nOFlats">
+                            <div>
+                                <h4>2 BHK Flats/Apartments</h4>
+                                <p>&#8377;25 Lac - &#8377;2.5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            <div>
+                                <h4>4 BHK Flats/Apartments</h4>
+                                <p>&#8377;50 Lac - &#8377;5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            <div>
+                                <h4>3 BHK Flats/Apartments</h4>
+                                <p>&#8377;45 Lac - &#8377;4.5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="nOPlaces">
+                        <h4>2 - Kanakapura Road Vakil Garden City</h4>
+
+                        <p>If you are looking for a flat in Bangalore that comes with the benefit of both a serene
+                            environment and proximity to IT hubs, then Kanakapura Road is the best. The area is home to a
+                            number of high-end residential projects equipped with all the modern amenities. This includes
+                            Godrej Eternity, Mantri Tranquil, Prestige Falcon City, and Brigade Meadows, to name a few.
+                            Excellent metro connectivity and availability of Cauvery water further make this locality more
+                            favorable. Kanakapura Road is also well-connected to Banashankari, Outer Ring Road, Bannerghatta
+                            Road, Electronic City, and Jayanagar. The demand for flats in Bangalore on Kanakapura Road has
+                            been fueled by the presence of numerous well-established schools, top hospitals, and well-known
+                            shopping malls nearby.
+                        </p>
+
+                        <h4>Flats for Sale in Kanakapura Road, Bangalore</h4>
+
+                        <div class="nOFlats">
+                            <div>
+                                <h4>2 BHK Flats/Apartments</h4>
+                                <p>&#8377;25 Lac - &#8377;2.5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            <div>
+                                <h4>4 BHK Flats/Apartments</h4>
+                                <p>&#8377;50 Lac - &#8377;5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            <div>
+                                <h4>3 BHK Flats/Apartments</h4>
+                                <p>&#8377;45 Lac - &#8377;4.5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="nOPlaces">
+                        <h4>3 - Kanakapura Road Vakil Garden City</h4>
+
+                        <p>If you are looking for a flat in Bangalore that comes with the benefit of both a serene
+                            environment and proximity to IT hubs, then Kanakapura Road is the best. The area is home to a
+                            number of high-end residential projects equipped with all the modern amenities. This includes
+                            Godrej Eternity, Mantri Tranquil, Prestige Falcon City, and Brigade Meadows, to name a few.
+                            Excellent metro connectivity and availability of Cauvery water further make this locality more
+                            favorable. Kanakapura Road is also well-connected to Banashankari, Outer Ring Road, Bannerghatta
+                            Road, Electronic City, and Jayanagar. The demand for flats in Bangalore on Kanakapura Road has
+                            been fueled by the presence of numerous well-established schools, top hospitals, and well-known
+                            shopping malls nearby.
+                        </p>
+
+                        <h4>Flats for Sale in Kanakapura Road, Bangalore</h4>
+
+                        <div class="nOFlats">
+                            <div>
+                                <h4>2 BHK Flats/Apartments</h4>
+                                <p>&#8377;25 Lac - &#8377;2.5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            <div>
+                                <h4>4 BHK Flats/Apartments</h4>
+                                <p>&#8377;50 Lac - &#8377;5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            <div>
+                                <h4>3 BHK Flats/Apartments</h4>
+                                <p>&#8377;45 Lac - &#8377;4.5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="nOPlaces">
+                        <h4>4 - Kanakapura Road Vakil Garden City</h4>
+
+                        <p>If you are looking for a flat in Bangalore that comes with the benefit of both a serene
+                            environment and proximity to IT hubs, then Kanakapura Road is the best. The area is home to a
+                            number of high-end residential projects equipped with all the modern amenities. This includes
+                            Godrej Eternity, Mantri Tranquil, Prestige Falcon City, and Brigade Meadows, to name a few.
+                            Excellent metro connectivity and availability of Cauvery water further make this locality more
+                            favorable. Kanakapura Road is also well-connected to Banashankari, Outer Ring Road, Bannerghatta
+                            Road, Electronic City, and Jayanagar. The demand for flats in Bangalore on Kanakapura Road has
+                            been fueled by the presence of numerous well-established schools, top hospitals, and well-known
+                            shopping malls nearby.
+                        </p>
+
+                        <h4>Flats for Sale in Kanakapura Road, Bangalore</h4>
+
+                        <div class="nOFlats">
+                            <div>
+                                <h4>2 BHK Flats/Apartments</h4>
+                                <p>&#8377;25 Lac - &#8377;2.5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            <div>
+                                <h4>4 BHK Flats/Apartments</h4>
+                                <p>&#8377;50 Lac - &#8377;5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            <div>
+                                <h4>3 BHK Flats/Apartments</h4>
+                                <p>&#8377;45 Lac - &#8377;4.5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="nOPlaces">
+                        <h4>5 - Kanakapura Road Vakil Garden City</h4>
+
+                        <p>If you are looking for a flat in Bangalore that comes with the benefit of both a serene
+                            environment and proximity to IT hubs, then Kanakapura Road is the best. The area is home to a
+                            number of high-end residential projects equipped with all the modern amenities. This includes
+                            Godrej Eternity, Mantri Tranquil, Prestige Falcon City, and Brigade Meadows, to name a few.
+                            Excellent metro connectivity and availability of Cauvery water further make this locality more
+                            favorable. Kanakapura Road is also well-connected to Banashankari, Outer Ring Road, Bannerghatta
+                            Road, Electronic City, and Jayanagar. The demand for flats in Bangalore on Kanakapura Road has
+                            been fueled by the presence of numerous well-established schools, top hospitals, and well-known
+                            shopping malls nearby.
+                        </p>
+
+                        <h4>Flats for Sale in Kanakapura Road, Bangalore</h4>
+
+                        <div class="nOFlats">
+                            <div>
+                                <h4>2 BHK Flats/Apartments</h4>
+                                <p>&#8377;25 Lac - &#8377;2.5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            <div>
+                                <h4>4 BHK Flats/Apartments</h4>
+                                <p>&#8377;50 Lac - &#8377;5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            <div>
+                                <h4>3 BHK Flats/Apartments</h4>
+                                <p>&#8377;45 Lac - &#8377;4.5 Cr</p>
+                                <h4>454+ Flatrs Available</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Best Places in Banglore Section Ends-->
+
+            <!-- Best Projects in --- Section Starts -->
+            <section class="bestProjectSection">
+                <h3>Best Projects in Bangalore</h3>
+                <div class="porpCardCont">
+                    <div class="propCard">
+                        <h3>Sri Krishna Garden</h3>
+                        <p>Kanakapura Road Vakil Garden</p>
+                        <h4>₹ 18.6 Lac - ₹ 1.44 Cr</h4>
+                        <p>Plot</p>
+                        <p class="rToM">Ready to Move</p>
+                        <p><strong>4.0</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ratings(4 Reviews)</p>
+                        <p>Best place to live, clean air, nice atmosphere, green area</p>
+                        <h5>Read More</h5>
+                    </div>
+
+                    <div class="propCard" style="border-top: solid 3px rgb(0, 179, 170);">
+                        <h3>Sri Krishna Garden</h3>
+                        <p>Kanakapura Road Vakil Garden</p>
+                        <h4>₹ 18.6 Lac - ₹ 1.44 Cr</h4>
+                        <p>Plot</p>
+                        <p class="rToM">Ready to Move</p>
+                        <p><strong>4.0</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ratings(4 Reviews)</p>
+                        <p>Best place to live, clean air, nice atmosphere, green area</p>
+                        <h5>Read More</h5>
+                    </div>
+
+                    <div class="propCard">
+                        <h3>Sri Krishna Garden</h3>
+                        <p>Kanakapura Road Vakil Garden</p>
+                        <h4>₹ 18.6 Lac - ₹ 1.44 Cr</h4>
+                        <p>Plot</p>
+                        <p class="rToM">Ready to Move</p>
+                        <p><strong>4.0</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ratings(4 Reviews)</p>
+                        <p>Best place to live, clean air, nice atmosphere, green area</p>
+                        <h5>Read More</h5>
+                    </div>
+
+                    <div class="propCard" style="border-top: solid 3px rgb(0, 179, 170);">
+                        <h3>Sri Krishna Garden</h3>
+                        <p>Kanakapura Road Vakil Garden</p>
+                        <h4>₹ 18.6 Lac - ₹ 1.44 Cr</h4>
+                        <p>Plot</p>
+                        <p class="rToM">Ready to Move</p>
+                        <p><strong>4.0</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ratings(4 Reviews)</p>
+                        <p>Best place to live, clean air, nice atmosphere, green area</p>
+                        <h5>Read More</h5>
+                    </div>
+                </div>
+                <p>Show More</p>
+            </section>
+            <!-- Best Projects in --- Section Ends -->
+
+            <!-- Flat Prices in --- Section Starts -->
+            <section class="flatPriceSection">
+                <h3>Bangalore Flat Prices</h3>
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <th>BHK Types</th>
+                            <th>Units Available</th>
+                            <th>Price Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 BHK Flats/Apartments</td>
+                            <td>1152</td>
+                            <td>₹ 5.9 Lac - ₹ 2.60 Cr</td>
+                        </tr>
+                        <tr>	
+                            <td>2 BHK Flats/Apartments</td>
+                            <td>14238</td>
+                            <td>₹ 5.6 Lac - ₹ 10 Cr</td>
+                        </tr>
+                        <tr>
+                            <td>3 BHK Flats/Apartments</td>
+                            <td>14422</td>
+                            <td>₹ 24 Lac - ₹ 9.50 Cr</td>
+                        </tr>
+                        <tr>
+                            <td>4 BHK Flats/Apartments</td>
+                            <td>2319</td>
+                            <td>₹ 2.9 Lac - ₹ 15 Cr</td>
+                        </tr>
+                        <tr>
+                            <td>5 BHK Flats/Apartments</td>
+                            <td>169</td>
+                            <td>₹ 85 Lac - ₹ 20 Cr</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>*Data based on residential properties available for sale on checkedspot.com</p>
+            </section>
+            <!-- Flat Prices in --- Section Ends -->
+        </div>
+
+    </div>
+
+</body>
+
+</html>
