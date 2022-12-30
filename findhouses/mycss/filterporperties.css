@@ -466,3 +466,135 @@ p {
 }
 
 /* Flat Prices Section Ends */
+
+/* About Place Section Starts */
+.aboutPlaceSection {
+    width: 81.5vw;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.aboutPlaceSection h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aboutPlaceSection > div {
+    background-color: #fff;
+    padding: 20px 25px;
+    border: solid 1px #d7d7d7;
+    border-radius: 8px;
+}
+
+.aboutPlaceSection > div .intro {
+    width: 98%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.aboutPlaceSection .placeDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.aboutPlaceSection .placeDetails .leftHalf {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.aboutPlaceSection .placeDetails .leftHalf > div{
+    display: flex;
+    border-bottom: solid 1px #d7d7d7;
+    padding-top: 7px;
+}
+
+.aboutPlaceSection .placeDetails .leftHalf > div p {
+    width: 40%;
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.aboutPlaceSection .placeDetails .leftHalf > div h4 {
+    width: 60%;
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.aboutPlaceSection .leftHalf > div p:hover, .aboutPlaceSection .leftHalf > div h4:hover {
+    overflow: visible;
+}
+
+.aboutPlaceSection .placeDetails .rightHalf {
+    border-radius: 10px;
+    width: 45%;
+    height: 100%;
+}
+
+.aboutPlaceSection .placeDetails .rightHalf img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutPlaceSection > p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* About Place Section Ends */
+
+/* Place Real Estate Market Section Starts */
+.marketPlaceSection {
+    width: 81.5vw;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.marketPlaceSection h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.marketPlaceSection .marketPlaceCont {
+    background-color: #fff;
+    padding: 20px 25px;
+    border: solid 1px #d7d7d7;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.marketPlaceSection .marketPlaceCont .placeIntro {
+    width: 48%;
+    height: 308px;
+    margin-right: 20px;
+    overflow: hidden;
+    /* white-space: nowrap;
+    text-overflow: ellipsis; */
+}
+
+.marketPlaceSection .marketPlaceCont .placeImage {
+    width: 48%;
+    height: 308px;
+}
+
+.marketPlaceSection .marketPlaceCont .placeImage img {  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.marketPlaceSection > p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* Place Real Estate Market Section Ends */
