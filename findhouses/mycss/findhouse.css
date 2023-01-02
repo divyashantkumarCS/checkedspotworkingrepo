@@ -6,9 +6,107 @@
     box-sizing: border-box;
 }
 
+/* Header Section Starts */
+.cHeader {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+}
+
+.navigationTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    background-color: rgb(161, 161, 161);
+}
+
+.left {
+    display: flex;
+}
+
+.left .logoCont {
+    width: 200px; 
+    height: 48px;
+    margin-top: -8px;
+}
+
+.left div:last-child {
+    color: white;
+    height: 48px;
+    padding: 13px 10px 0 10px;
+    margin-left: 20px;
+}
+
+.right {
+    display: flex;
+    margin-right: 35px;
+    height: 48px;
+}
+
+.right div {
+    padding: 13px 17px 0 17px;
+    color: white;
+}
+
+.right div:last-child {
+    height: 30px;
+    border-radius: 22px;
+    background-color: white;
+    color: black;
+    margin-top: 9px;
+    padding-top: 4px;
+}
+
+.right div:last-child::after {
+    color: black;
+}
+
+.left div:last-child:hover, .right div:hover:not(.right div:last-child) {
+    background-color: white;
+    color: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.left div:last-child::after, .right div::after{
+    content: '\f107';
+    font-weight: bold;
+    padding-left: 7px;
+    font-family: "FontAwesome";
+    color: #fff;
+}
+
+.left div:last-child:hover::after, .right div:hover::after {
+    content: '\f106';
+    font-weight: bold;
+    color: rgb(244, 74, 93);
+}
+
+.navigationBottom {
+    padding: 0;
+    border-bottom: solid 1px rgba(168, 167, 167, 0.435);
+    background-color: white;
+}
+
+.style-1 {
+    margin-bottom: 0;
+    margin-top: 0 !important;
+}
+
+#navigation.style-1 ul a {
+    padding: 1px 27px;
+}
+
+/* Header section Ends */
+
+
 .findHouseSection {
     padding-top: 110px;
-    padding-bottom: 50px;
     margin-right: 10px;
     display: flex;
 }
@@ -32,6 +130,11 @@
     justify-content: center;
     align-items: center;
     border: solid 1px rgba(0, 0, 0, 0.384);
+}
+
+.findHouseSection .advertismentBlock  img{
+    width: 25vw;
+    height: 200px;
 }
 
 .findHouseContainer {
