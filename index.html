@@ -37,6 +37,7 @@
     <link rel="stylesheet" id="color" href="./findhouses/css/colors/light-black.css">
     <!-- MY CSS -->
     <link rel="stylesheet" href="./findhouses/mycss/findhouse.css">
+    <link rel="stylesheet" href="./findhouses/mycss/navigation.css">
 
 </head>
 
@@ -79,52 +80,44 @@
                 <nav id="navigation" class="style-1">
                     <ul id="responsive">
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="#">Buy</a>
-                            <ul>
-                                <li><a href="#">Property Type</a>
-                                    <ul>
-                                        <li><a href="./findhouses/property-list.html">Flat in Bangalore</a></li>
-                                        <li><a href="./findhouses/property-list.html">House for sale in
-                                                Bangalore</a></li>
-                                        <li><a href="./findhouses/property-list.html">Villa in Bangalore</a>
-                                        </li>
-                                        <li><a href="./findhouses/property-list.html">Plot in Bangalore</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Rent</a>
-                            <ul>
-                                <li><a href="#">Popular Choices</a>
-                                    <ul>
-                                        <li><a href="./findhouses/property-list.html">Owner Properties</a></li>
-                                        <li><a href="./findhouses/property-list.html">Verified Properties</a>
-                                        </li>
-                                        <li><a href="./findhouses/property-list.html">Furnished Homes</a></li>
-                                        <li><a href="./findhouses/property-list.html">Bachelor Friendly
-                                                Homes</a></li>
-                                        <li><a href="./findhouses/property-list.html">Immediately Available</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Sell</a>
-                            <ul>
-                                <li><a href="#">For Owner</a>
-                                    <ul>
-                                        <li><a href="./index.html">Post PropertyFREE</a></li>
-                                        <li><a href="./index.html">My Dashboard</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                        <li id="buy"><a href="#">Buy</a></li>
+                        <li id="rent"><a href="#">Rent</a></li>
+                        <li id="sell"><a href="#">Sell</a></li>
                         <li><a href="./findhouses/contact-us.html">Contact</a></li>
-                        <!-- <li class="d-none d-xl-none d-block d-lg-block"><a href="login.html">Login</a></li>
-                        <li class="d-none d-xl-none d-block d-lg-block"><a href="register.html">Register</a></li>
-                        <li class="d-none d-xl-none d-block d-lg-block mt-5 pb-4 ml-5 border-bottom-0"><a href="add-property.html" class="button border btn-lg btn-block text-center">Add Listing<i class="fas fa-laptop-house ml-2"></i></a></li>-->
                     </ul>
                 </nav>
+            </div>
+            
+            <div id="buyOptionsDisplay" class="optionsDisplay">
+                <p>Property Type</p>
+                <ul>
+                    <li><a href="./findhouses/property-list.html">Flat in Bangalore</a></li>
+                    <li><a href="./findhouses/property-list.html">House for sale in
+                                Bangalore</a></li>
+                    <li><a href="./findhouses/property-list.html">Villa in Bangalore</a>
+                    </li>
+                    <li><a href="./findhouses/property-list.html">Plot in Bangalore</a></li>
+                </ul>
+            </div>
+            <div id="rentOptionsDisplay" class="optionsDisplay">
+                <p>Popular Choices</p>
+                <ul>
+                    <li><a href="./findhouses/findhouses/property-list.html">Owner Properties</a></li>
+                    <li><a href="./findhouses/findhouses/property-list.html">Verified Properties</a>
+                    </li>
+                    <li><a href="./findhouses/findhouses/property-list.html">Furnished Homes</a></li>
+                    <li><a href="./findhouses/findhouses/property-list.html">Bachelor Friendly
+                            Homes</a></li>
+                    <li><a href="./findhouses/findhouses/property-list.html">Immediately Available</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="sellOptionsDisplay" class="optionsDisplay">
+                <p>For Owner</p>
+                <ul>
+                    <li><a href="./index.html">Post PropertyFREE</a></li>
+                    <li><a href="./index.html">My Dashboard</a></li>
+                </ul>
             </div>
         </header>
 
@@ -1455,6 +1448,8 @@
         <script src="./findhouses/revolution/js/extensions/revolution.extension.video.min.js"></script>
         <!-- MY Javascript -->
         <script src="./findhouses/myjs/indexmy.js"></script>
+        <script src="./findhouses/myjs/navigation.js"></script>
+
         <script>
             var tpj = jQuery;
             var revapi26;
