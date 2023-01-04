@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 /* Header Section Starts */
 .cHeader {
     width: 100vw;
-    display: flex;
-    flex-direction: column;
     position: fixed;
     z-index: 10;
 }
@@ -32,12 +35,107 @@
     margin-top: -8px;
 }
 
-.left div:last-child {
+.left .dropdown {
     color: white;
     height: 48px;
     padding: 13px 10px 0 10px;
     margin-left: 20px;
 }
+
+.left .dropdown:hover {
+    background-color: white;
+    color: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.left .dropdown {
+    width: 120px; 
+}
+
+.left .dropdown #locationBtn {
+    width: 100px;
+    border: none;
+    background-color: transparent;
+}
+
+.left .dropdown #locationBtn::after {
+    content: '\f107';
+    font-weight: bold;
+    padding-left: 7px;
+    font-family: "FontAwesome";
+    color: rgb(0, 0, 0);
+}
+
+.left .dropdown:hover #locationBtn::after {
+    content: '\f106';
+    font-weight: bold;
+    color: rgb(244, 74, 93);
+}
+
+.left .dropdown .locationOptions {
+    margin-top: 12px;
+    margin-left: -157px;
+    box-shadow: 0 3px 9px 0 rgb(48 48 48 / 20%);
+    border: 1px solid #bbbaba;
+    border-top: none;
+    border-radius: 8px;
+    width: 200px;
+    height: auto;
+    position: relative;
+    background-color: white;
+    color: black;
+    z-index: 1;
+    display: none;
+}
+
+.left .dropdown:hover .locationOptions {
+    display: flex;
+    width: 950px;
+}
+
+.left .dropdown:hover .locationOptions .locLeftBlock {
+    width: 78%;
+    padding: 20px 20px 15px 20px;
+}
+
+.left .dropdown:hover .locationOptions .locLeftBlock .country {
+    margin-bottom: 25px;
+}
+
+.locationOptions .nearByCities, .locationOptions .popularCities, .locationOptions .otherCities {
+    margin-bottom: 20px;
+}
+
+.locLeftBlock p {
+    line-height: 23px;
+    color: #666;
+    font-size: 14px;
+}
+
+.locLeftBlock h3 {
+    margin-bottom: 5px;
+    line-height: 15px;
+} 
+
+.locLeftBlock p:hover {
+    color: rgb(244, 74, 93);
+}
+
+.locationOptions .citiesList {
+    display:flex; 
+    justify-content: space-between;
+}
+
+ 
+.left .dropdown:hover .locationOptions .locRightBlock {
+    width: 22%;
+    margin-left: 40px;
+    padding: 20px 20px 15px 30px;
+    border-left: solid 1px rgba(192, 190, 190, 0.541);
+    border-radius: 0;
+}
+
 
 .right {
     display: flex;
@@ -45,12 +143,99 @@
     height: 48px;
 }
 
-.right div {
-    padding: 13px 17px 0 17px;
-    color: white;
+.right button {
+    border: none;
+    background-color: transparent;
 }
 
-.right div:last-child {
+.right div {
+    padding: 13px 17px 0 17px;
+}
+
+.right .MBprime {
+    width: 120px;
+}
+
+.right .MBprimeOption, .right .loginOption {
+    margin-top: 12px;
+    margin-left: -18px;
+    padding: 15px;
+    box-shadow: 0 3px 9px 0 rgb(48 48 48 / 20%);
+    border: 1px solid #bbbaba;
+    border-top: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: white;
+    position: relative;
+    z-index: 5;
+    display: none;
+}
+
+.right .MBprimeOption:hover, .right  .loginOption:hover {
+    border-top-left-radius: 0 !important;
+}
+
+.right .MBprimeOption {
+    width: 370px;
+}
+
+.right .MBprimeOption div:first-child {
+    background-color: #171929 !important;
+    border-radius: 8px;
+    text-align: center;
+    height: 130px;
+    padding-top: 60px; /*REPACE THIS SPACE BY AN ICON*/
+}
+
+.right .MBprimeOption div:first-child h3,
+.right .MBprimeOption div:first-child h4 
+{
+    color: white;
+} 
+
+.right .MBprimeOption div:first-child h3 {
+    font-size: 23px;
+}
+
+.right .MBprimeOption div:first-child h4 {
+    font-size: 13px;
+}
+
+.right .MBprimeOption div:nth-child(2) p {
+    padding-left: 50px;
+}
+
+.right .MBprimeOption div:last-child {
+    background-color: rgb(244, 74, 93) !important;
+    text-align: center;
+}
+
+
+.right .MBprime:hover .MBprimeOption {
+    display: block;
+}
+
+
+.right .login {
+    width: 90px;
+    margin-right: 10px;
+}
+
+.right .loginOption {
+    width: 250px;
+    /* display: block; */
+}
+
+.right .loginOption div p:hover {
+    color: rgb(244, 74, 93);
+}
+
+.right .login:hover .loginOption {
+    display: block;
+}
+
+.right .postProp {
     height: 30px;
     border-radius: 22px;
     background-color: white;
@@ -63,27 +248,28 @@
     color: black;
 }
 
-.left div:last-child:hover, .right div:hover:not(.right div:last-child) {
+.right div:hover:not(.right .postProp) {
     background-color: white;
     color: black;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
-
-.left div:last-child::after, .right div::after{
+.right div > #primeBtn::after, .right div > #loginBtn::after{
     content: '\f107';
     font-weight: bold;
     padding-left: 7px;
     font-family: "FontAwesome";
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
-.left div:last-child:hover::after, .right div:hover::after {
+.right div:hover > #primeBtn::after, .right div:hover > #loginBtn::after {
     content: '\f106';
     font-weight: bold;
     color: rgb(244, 74, 93);
 }
+
+
 
 .navigationBottom {
     height: 35px;
@@ -101,7 +287,6 @@
     padding: 1px 27px;
 }
 
-/* Header section Ends */
 
 
 
@@ -117,19 +302,56 @@
     height: auto;
 }
 
+.optionsDisplay ul li {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.optionsDisplay ul {
+    padding-left: 0;
+}
+
+.optionsDisplay > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.optionsDisplay > div  div {
+    width: 200px;
+    padding: 10px 20px 10px 20px;
+}
+
+.optionsDisplay > div  div li{
+    padding: 5px;
+}
+
+.optionsDisplay > div  div li a {
+    color: #303030;
+}
+
+.optionsDisplay > div  div li a:hover {
+    color: rgb(244, 74, 93);
+    text-decoration: none;
+}
+
 #buyOptionsDisplay {
-    width: 300px;
-    margin-left: 151px;
+    width: 950px;
+    margin-left: 45px;
 }
 
 #rentOptionsDisplay {
-    width: 300px;
-    margin-left: 260px;
+    width: 800px;
+    margin-left: 153px;
 }
 
 #sellOptionsDisplay {
     width: 300px;
-    margin-left: 375px;
+    margin-left: 269px;
+}
+
+.budget ul {
+    overflow-y: hidden !important;
 }
 
 #buyOptionsDisplay ul, #rentOptionsDisplay ul, #sellOptionsDisplay ul {
@@ -183,3 +405,5 @@
 #buyOptionsDisplay ul:hover , #rentOptionsDisplay ul:hover, #sellOptionsDisplay ul:hover {
     border-top: solid 1px rgb(244, 74, 93);
 }
+
+/* Header section Ends */

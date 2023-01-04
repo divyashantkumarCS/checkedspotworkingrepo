@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- MY CSS -->
     <link rel="stylesheet" href="./mycss/filterporperties.css">
+    <link rel="stylesheet" href="./mycss/navigation.css">
 </head>
 
 <body>
@@ -31,8 +32,9 @@
                 <div class="left">
                     <div class="logoCont">
                         <a href="#"><img src="./images/logocheckedspot.png" alt=""></a>
-                    </div>        
-                    <div class="navigationBottom">
+                    </div>
+
+                    <div>
                         <div class="mmenu-trigger">
                             <button class="hamburger hamburger--collapse" type="button">
                                 <span class="hamburger-box">
@@ -43,56 +45,54 @@
                         <!-- Main Navigation -->
                         <nav id="navigation" class="style-1">
                             <ul id="responsive">
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="#">Buy</a>
-                                    <ul>
-                                        <li><a href="#">Property Type</a>
-                                            <ul>
-                                                <li><a href="./property-list.html">Flat in Bangalore</a></li>
-                                                <li><a href="./property-list.html">House for sale in
-                                                        Bangalore</a></li>
-                                                <li><a href="./property-list.html">Villa in Bangalore</a>
-                                                </li>
-                                                <li><a href="./property-list.html">Plot in Bangalore</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Rent</a>
-                                    <ul>
-                                        <li><a href="#">Popular Choices</a>
-                                            <ul>
-                                                <li><a href="./property-list.html">Owner Properties</a></li>
-                                                <li><a href="./property-list.html">Verified Properties</a>
-                                                </li>
-                                                <li><a href="./property-list.html">Furnished Homes</a></li>
-                                                <li><a href="./property-list.html">Bachelor Friendly
-                                                        Homes</a></li>
-                                                <li><a href="./property-list.html">Immediately Available</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Sell</a>
-                                    <ul>
-                                        <li><a href="#">For Owner</a>
-                                            <ul>
-                                                <li><a href="../index.html">Post PropertyFREE</a></li>
-                                                <li><a href="../index.html">My Dashboard</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="./contact-us.html">Contact</a></li>
+                                <li id="buy"><a href="#">Buy</a></li>
+                                <li id="rent"><a href="#">Rent</a></li>
+                                <li id="sell"><a href="#">Sell</a></li>
+                                <li><a href="./findhouses/contact-us.html">Contact</a></li>
                             </ul>
                         </nav>
-                    </div>           
+                    </div>
                 </div>
+
                 <div class="right">
-                    <div>MB Prime</div>
-                    <div>Login</div>
-                    <div>Post Property FREE</div>
+                    <div class="MBprime">
+                        <button id="primeBtn" type="button">MB Prime</button>
+                        <div class="MBprimeOption">
+                            <div>
+                                <h3>Introducing MB Prime</h3>
+                                <h4>One membership, many exclusive privileges</h4>
+                            </div>
+                            <div>
+                                <p>Handpicked Agent to assist you</p>
+                                <p>First access to owner properties</p>
+                                <p>Exclusive partner discounts</p>
+                            </div>
+                            <div>
+                                <button type="button">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login">
+                        <button id="loginBtn" type="button">Login</button>
+                        <div class="loginOption">
+                            <p>My Activity</p>
+                            <div>
+                                <p>Contacted Properties</p>
+                                <p>Viewed Properties</p>
+                                <p>Shortlisted Properties</p>
+                                <p>Searches</p>
+                            </div>
+                            <div>
+                                <p>Recommendations</p>
+                                <p>My Profile</p>
+                            </div>
+                            <div>
+                                <button type="button">Login</button>
+                            </div>
+                            <p>New to Magicbricks? Sign Up</p>
+                        </div>
+                    </div>
+                    <div class="postProp">Post Property FREE</div>
                 </div>
 
             </div>
@@ -885,18 +885,42 @@
 
             <!-- ADVERTISMENT BLOCK Starts -->
             <div class="advertBlock">
-                <div><h2>Advert 01</h2></div>
-                <div><h2>Advert 02</h2></div>
-                <div><h2>Advert 03</h2></div>
-                <div><h2>Advert 04</h2></div>
-                <div><h2>Advert 05</h2></div>
-                <div><h2>Advert 06</h2></div>
-                <div><h2>Advert 07</h2></div>
-                <div><h2>Advert 08</h2></div>
-                <div><h2>Advert 09</h2></div>
-                <div><h2>Advert 10</h2></div>
-                <div><h2>Advert 11</h2></div>
-                <div><h2>Advert 12</h2></div>
+                <div>
+                    <h2>Advert 01</h2>
+                </div>
+                <div>
+                    <h2>Advert 02</h2>
+                </div>
+                <div>
+                    <h2>Advert 03</h2>
+                </div>
+                <div>
+                    <h2>Advert 04</h2>
+                </div>
+                <div>
+                    <h2>Advert 05</h2>
+                </div>
+                <div>
+                    <h2>Advert 06</h2>
+                </div>
+                <div>
+                    <h2>Advert 07</h2>
+                </div>
+                <div>
+                    <h2>Advert 08</h2>
+                </div>
+                <div>
+                    <h2>Advert 09</h2>
+                </div>
+                <div>
+                    <h2>Advert 10</h2>
+                </div>
+                <div>
+                    <h2>Advert 11</h2>
+                </div>
+                <div>
+                    <h2>Advert 12</h2>
+                </div>
 
             </div>
             <!-- ADVERTISMENT BLOCK Ends -->
@@ -1030,6 +1054,10 @@
 
         <a data-scroll href="#wrapper" class="go-up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
         <!-- END FOOTER -->
+
+
+        <!-- SCRIPT -->
+        <script src="./myjs/navigation.js"></script>
 
     </div>
 
