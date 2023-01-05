@@ -379,7 +379,11 @@ p {
     padding-left: 0;
 }
 
-.optionsDisplay ul li {
+#navigation.style-1 ul a {
+    width: 170px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 #navigation.style-1 ul a {
@@ -393,7 +397,7 @@ p {
     color: black !important;
     text-decoration: none;
     transform: none;
-    color: rgb(244, 74, 93);
+    color: rgb(244, 74, 93) !important;
 }
 
 
