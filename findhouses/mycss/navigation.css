@@ -21,7 +21,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 48px;
+    height: 48px !important;
     background-color: rgb(161, 161, 161);
 }
 
@@ -180,7 +180,7 @@ p {
     width: 370px;
 }
 
-.right .MBprimeOption div:first-child {
+.right .MBprimeOption .divOne {
     background-color: #171929 !important;
     border-radius: 8px;
     text-align: center;
@@ -188,25 +188,25 @@ p {
     padding-top: 60px; /*REPACE THIS SPACE BY AN ICON*/
 }
 
-.right .MBprimeOption div:first-child h3,
-.right .MBprimeOption div:first-child h4 
+.right .MBprimeOption .divOne h3,
+.right .MBprimeOption .divOne h4 
 {
     color: white;
 } 
 
-.right .MBprimeOption div:first-child h3 {
+.right .MBprimeOption .divOne h3 {
     font-size: 23px;
 }
 
-.right .MBprimeOption div:first-child h4 {
+.right .MBprimeOption .divOne h4 {
     font-size: 13px;
 }
 
-.right .MBprimeOption div:nth-child(2) p {
+.right .MBprimeOption .divTwo p {
     padding-left: 50px;
 }
 
-.right .MBprimeOption div:last-child {
+.right .MBprimeOption .divThree {
     background-color: rgb(244, 74, 93) !important;
     text-align: center;
 }
@@ -270,25 +270,84 @@ p {
 }
 
 
+#navigation {
+    margin-top: 0px;
+}
 
 .navigationBottom {
-    height: 35px;
+    height: 38px;
+    padding-bottom: 10px;
     padding: 0;
     border-bottom: solid 1px rgba(168, 167, 167, 0.435);
     background-color: white;
 }
 
-.style-1 {
-    margin-bottom: 0;
-    margin-top: 0 !important;
+#responsive {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-#navigation.style-1 ul a {
-    padding: 1px 27px;
+#responsive > div {
+    margin: 0 20px;
+    width: 85px;
+    height: 35px;
 }
 
+#responsive > div > button {   
+    height: 33px;
+    border: none;
+    background-color: transparent;
+    padding: 0 15px;
+    border-bottom: none;
+}
 
+#responsive > div > button:focus {
+    outline: none;
+}
 
+#responsive > div > button::after {
+    content: '\f107';
+    font-weight: bold;
+    padding-left: 9px;
+    font-family: "FontAwesome";
+    color: #000;
+}
+
+#responsive .contact > button::after {
+    content: '';
+}
+
+#responsive > div:hover > button {
+    margin-top: 5px;
+    background-color: white;
+    color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: solid 1px #d7d7d7;
+    border-bottom: none;
+}
+
+#responsive .contact:hover > button {
+    margin-top: 2px;
+    border: none;
+    border-radius: none;
+    background-color: transparent;
+}
+
+#responsive > div:hover > button::after {
+    content: '\f106';
+    color: rgb(244, 74, 93);
+}
+
+#responsive .contact:hover > button::after{
+    content: "";
+} 
+
+#responsive > div:hover > div {
+    display: block;
+    border-top: none;
+}
 
 .optionsDisplay {
     display: none;
@@ -297,19 +356,9 @@ p {
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: white;
+    background-color: white !important;
     padding: 10px 10px 10px 15px;
     height: auto;
-}
-
-.optionsDisplay ul li {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.optionsDisplay ul {
-    padding-left: 0;
 }
 
 .optionsDisplay > div {
@@ -317,41 +366,58 @@ p {
     flex-direction: row;
 }
 
-.optionsDisplay > div  div {
-    width: 200px;
-    padding: 10px 20px 10px 20px;
+.optionsDisplay > div > div {
+    width: 160px;
+    margin: 10px;
 }
 
-.optionsDisplay > div  div li{
-    padding: 5px;
+.optionsDisplay > div > div > p {
+    margin: 0 10px;
 }
 
-.optionsDisplay > div  div li a {
-    color: #303030;
+.optionsDisplay ul {
+    padding-left: 0;
 }
 
-.optionsDisplay > div  div li a:hover {
-    color: rgb(244, 74, 93);
+.optionsDisplay ul li {
+}
+
+#navigation.style-1 ul a {
+    font-size: 15px;
+    text-transform: none;
+    line-height: 23px;
+    padding: 6px 10px;
+}
+
+.optionsDisplay > div > div li a:hover {
+    color: black !important;
     text-decoration: none;
+    transform: none;
+    color: rgb(244, 74, 93);
 }
+
 
 #buyOptionsDisplay {
     width: 950px;
-    margin-left: 45px;
 }
 
 #rentOptionsDisplay {
     width: 800px;
-    margin-left: 153px;
 }
 
 #sellOptionsDisplay {
     width: 300px;
-    margin-left: 269px;
 }
 
 .budget ul {
     overflow-y: hidden !important;
+    /* overflow-x: hidden ; */
+}
+
+#buyOptionsDisplay > div, #rentOptionsDisplay > div, #sellOptionsDisplay > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #buyOptionsDisplay ul, #rentOptionsDisplay ul, #sellOptionsDisplay ul {
@@ -362,40 +428,6 @@ p {
 
 #responsive li:hover {
     background-color: transparent !important;
-}
-
-#responsive a:hover {
-    height: 33px;
-    color: black !important;
-}
-
-#responsive #buy a:hover, #responsive #rent a:hover, #responsive #sell a:hover {
-    background-color: white;
-    color: black;
-    margin-top: 3px !important;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border: solid 1px #d7d7d7;
-    border-bottom: none;
-}
-
-#responsive #buy a::after, #responsive #rent a::after, #responsive #sell a::after {
-    content: '\f107';
-    font-weight: bold;
-    padding-left: 7px;
-    font-family: "FontAwesome";
-    color: #000;
-}
-
-#responsive #buy a:hover::after, #responsive #rent a:hover::after, #responsive #sell a:hover::after {
-    content: '\f106';
-    font-weight: bold;
-    color: rgb(244, 74, 93);
-}
-
-
-#buyOptionsDisplay p , #rentOptionsDisplay p, #sellOptionsDisplay p {
-    margin-bottom: 0;
 }
 
 #buyOptionsDisplay p:hover ~ ul , #rentOptionsDisplay p:hover ~ ul, #sellOptionsDisplay p:hover ~ ul {
