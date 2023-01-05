@@ -318,6 +318,10 @@ p {
     content: '';
 }
 
+#responsive .contact > button a {
+    color: inherit;
+}
+
 #responsive > div:hover > button {
     margin-top: 5px;
     background-color: white;
@@ -333,6 +337,10 @@ p {
     border: none;
     border-radius: none;
     background-color: transparent;
+}
+
+#responsive .contact:hover > button a {
+    text-decoration: none;
 }
 
 #responsive > div:hover > button::after {
